@@ -36,8 +36,8 @@ def securityQuestion1():
 def securityQuestion2():
     truthVar = "shrek"
 
-    userInp= int(input("Q2. In integers, what is the character length of the greatest animated movie of all time?: "))
-    truthVarLength= len(truthVar)              #Key section responsible for the counting of the character length
+    userInp= int(input("Q2. In integers, how many letters are in the title of the greatest animated movie franchise of all time?: "))
+    truthVarLength= len(truthVar)              #Key section responsible for the counting of the character legnth
 
 
     if truthVarLength==userInp:
@@ -124,7 +124,7 @@ def main():
     #This is a sentinel value loop that cannot be bypassed unless: these questions are successfully completed OR the correct passcode is entered
     while (codeInput != sentinelVal):
         validityCheck=True                                              #Inital setting of True is required to prevent infinite loop of below print() statement in case failure at any point during securityQuestions & to access first question
-        print("\nIncorrect!!, you may only acquire the code if you answer ALL of these questions correctly: \n")
+        print("\nIncorrect response!, you may only acquire the code if you answer ALL of these questions consecutively & correctly: \n")
         
 
 
@@ -158,7 +158,7 @@ def main():
                             print('\t\t\t __________________________')
                             print('\t\t\t| The code is non-existent |')
                             print('\t\t\t ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾')
-                            sentinelVal='non-existent'                  #Internally sets the passphrase and thus exits to the secret upon completion
+                            sentinelVal='non-existent'                  #Internally sets the code to its correct value and thus exits to the secret upon successful completion of questions
                             break
 
 
