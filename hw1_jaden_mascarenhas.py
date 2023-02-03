@@ -21,7 +21,7 @@ def securityQuestion1():
     boolVar= input("Q1. Is it false that you desire the code? (T/F): ")
 
 
-    #Can only the accepted characters(floats)
+    #Can only have the accepted character 'f' but is case-insensitive and also includes 'F'
     if boolVar.lower() in ['t']:
         return False
     elif boolVar.lower() in ['f']:
@@ -37,7 +37,7 @@ def securityQuestion2():
     truthVar = "shrek"
 
     userInp= int(input("Q2. In integers, what is the character length of the greatest animated movie of all time?: "))
-    truthVarLength= len(truthVar)              #Key section responsible for the counting of the character legnth
+    truthVarLength= len(truthVar)              #Key section responsible for the counting of the character length
 
 
     if truthVarLength==userInp:
