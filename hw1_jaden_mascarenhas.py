@@ -124,7 +124,7 @@ def main():
     #This is a sentinel value loop that cannot be bypassed unless: these questions are successfully completed OR the correct passcode is entered
     while (codeInput != sentinelVal):
         validityCheck=True                                              #Inital setting of True is required to prevent infinite loop of below print() statement in case failure at any point during securityQuestions & to access first question
-        print("\nIncorrect response!, you may only acquire the code if you answer ALL of these questions consecutively & correctly: \n")
+        print("\nIncorrect!!, you may only acquire the code if you answer ALL of these questions consecutively correctly: \n")
         
 
 
